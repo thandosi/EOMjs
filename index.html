@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/log.css">
+</head>
+
+<body>
+
+    <div class="landing">
+        <div class="welcome">
+            <div class="hello"> welcome Back</div>
+
+            <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum mollitia accusantium commodi corrupti quas expedita?</p>
+
+                <button>
+                    <span class="btn" style="color: white;">Sign in</span>
+                </button>
+        </div>
+        <div class="container">
+            <div class="the-card">
+                <div class="the-front"> <h1>Register</h1>
+                 <div class="reg">
+                     <form action="https://guarded-lowlands-69569.herokuapp.com/get-users/"
+                     method="POST">
+                        <div> 
+                            <label class="label" for="name">Full Name</label>
+                            <input class="form-input" name="name" id="name" required placeholder="Full Name" />
+                        </div>
+                          <div>
+                            <label class="label" for="Surname">Surname</label>
+                            <input class="form-input" name="Surname" id="Surname" required placeholder="Surname" />
+                          </div>
+                          <div>
+                            <label class="label" for="username">Username</label>
+                            <input class="form-input" name="username" id="username" required placeholder="Username" />
+                          </div>
+                          <div>
+                            <label class="label" for="password">Password</label>
+                            <input class="form-input" type="password" id="password" required placeholder="********" />
+                          </div>
+                          <div>
+                            <label class="label" for="number">Contact Number</label>
+                            <input class="form-input" type="tel" id="number" required placeholder="081 246 3691" />
+                          </div>
+                          <label class="label" for="your email">Your email</label>
+                          <input class="form-input"
+                            name="your email"
+                            id="your email"
+                            required
+                            placeholder="example@gmail.com"
+                          />
+                          <div>
+                            <div>
+                              <label class="label" for="contact"></label>
+                            </div>
+                          </div>
+                    
+                          <!-- your other form fields go here -->
+                    
+                          <button class="button" type="submit">Send</button>
+                    </div>
+                     </form>
+            </div>
+                <div class="the-back"><h1>back</h1>
+                    <div class="sign-in">
+                        <div>
+                            <label class="label" for="username">Username</label>
+                            <input class="form-input" name="username" id="username" required placeholder="Username" />
+                          </div>
+                          <div>
+                            <label class="label" for="password">Password</label>
+                            <input class="form-input" type="password" id="password" required placeholder="********" />
+
+                            <button class="button" type="submit">Send</button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
