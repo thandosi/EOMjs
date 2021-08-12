@@ -17,7 +17,7 @@
 
             <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum mollitia accusantium commodi corrupti quas expedita?</p>
 
-                <button>
+                <button class="buttons" type="submit">
                     <span class="btn" style="color: white;">Sign in</span>
                 </button>
         </div>
@@ -25,15 +25,15 @@
             <div class="the-card">
                 <div class="the-front"> <h1>Register</h1>
                  <div class="reg">
-                     <form action="https://guarded-lowlands-69569.herokuapp.com/get-users/"
+                     <form action="http://127.0.0.1:5000/user-registration/"
                      method="POST">
                         <div> 
-                            <label class="label" for="name">Full Name</label>
-                            <input class="form-input" name="name" id="name" required placeholder="Full Name" />
+                            <label class="label" for="first_name">Full Name</label>
+                            <input class="form-input" name="first_name" id="name" required placeholder="Full Name" />
                         </div>
                           <div>
-                            <label class="label" for="Surname">Surname</label>
-                            <input class="form-input" name="Surname" id="Surname" required placeholder="Surname" />
+                            <label class="label" for="last_name">Surname</label>
+                            <input class="form-input" name="last_name" id="Surname" required placeholder="Surname" />
                           </div>
                           <div>
                             <label class="label" for="username">Username</label>
@@ -41,15 +41,19 @@
                           </div>
                           <div>
                             <label class="label" for="password">Password</label>
-                            <input class="form-input" type="password" id="password" required placeholder="********" />
+                            <input class="form-input" name="password" type="password" id="password" required placeholder="********" />
                           </div>
                           <div>
-                            <label class="label" for="number">Contact Number</label>
-                            <input class="form-input" type="tel" id="number" required placeholder="081 246 3691" />
+                            <label class="label" for="address">Adress</label>
+                            <input class="form-input" name="address" type="text" id="adress" required placeholder="Please enter your adress" />
                           </div>
-                          <label class="label" for="your email">Your email</label>
+                          <div>
+                            <label class="label" for="phone_number">Contact Number</label>
+                            <input class="form-input" name="phone_number" type="tel" id="number" required placeholder="081 246 3691" />
+                          </div>
+                          <label class="label" for="user_email">Your email</label>
                           <input class="form-input"
-                            name="your email"
+                            name="user_email"
                             id="your email"
                             required
                             placeholder="example@gmail.com"
@@ -83,6 +87,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

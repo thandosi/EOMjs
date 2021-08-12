@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prod</title>
+    <script src="./scipts.js"></script>
+    <link rel="stylesheet" href="./prod.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <div class="container1">
+        <div class="content">
+          <form onsubmit="event.preventDefault(); searchItems()">
+            <input type="text" required id="searching" placeholder="Products" />
+            <button class="btn" type="submit">search</button>
+          </form>
+          <div class="personal-details">
+            <h3>detals</h3>
+          </div>
+          <div class="separator"></div>
+          <div class="centre">
+            <div class="container3">
+              <div class="addForm"></div>
+              <form action="#">
+                <div class="data">
+                  <label> Product_name</label>
+                  <input type="text">
+                </div>
+                <div class="data">
+                  <label> description</label>
+                  <input type="text">
+                </div>
+                <div class="data">
+                  <label> Price</label>
+                  <input type="text">
+                </div>
+                <div class="btns">
+                  <div class="inner"></div>
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <h2>Purchases</h2>
+          <ul class="list">
+            <li class="name">name</li>
+            <li class="quantity">quantity</li>
+            <li class="price">price</li>
+          </ul>
+        </div>
+      </div>
+      <div id="container2">
+        <div class="content2">
+          <h1>product</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

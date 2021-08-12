@@ -55,9 +55,14 @@ p{
   
 }
 
-.the-card:hover{
-  transform: rotateY(180deg);
+.buttons{
+  background-color: blue;
+  display: flex;
+justify-content: center;
+margin-top: 30px;
 }
+
+
 
 .the-front{
   position: absolute;
