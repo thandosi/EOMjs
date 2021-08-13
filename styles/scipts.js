@@ -2,7 +2,7 @@ let products = [];
 let cart = [];
 console.log(cart);
 
-fetch("https://ancient-dawn-92955.herokuapp.com/get_products/")
+fetch("https://guarded-lowlands-69569.herokuapp.com/get-Point_of_Sales/")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -39,14 +39,50 @@ function searchItems() {
   console.log(searchTerm);
 }
 
-//* Add to cart functions*//
+
 function addToCart(id) {
   let product = products.data.find((item) => {
     return (item.id = id);
-  });
+});
   console.log(product);
   cart.push(product);
   console.log("See Cart Items Here: ", cart);
+}
+
+ 
+//quantity----------------------------------------------
+function getQuantity(){
+ let quantity = 0
+ for (let i = 0; i < cart.length; i += 1){
+     quantity += cart[i].quantity 
+ }
+ return quantity
+}
+
+//total----------------------------------------------------
+function getTotal(){
+ let total = 0
+ for (let i =0; i < cart.length; i +=1){
+     total += cart[i].price * cart[i].quantity
+ }
+ return total.toFixed(2)
+}
+
+//removing -------------------------------------------
+
+function removeItems(name, quantity = 0){
+ for (let i = 0; i < cart.length; i +=1){
+     if (cart[i].product_name === name){
+         if (quantity > 0){
+           cart[i].quantity -= quantity
+          }
+         if (cart[i].quantity < 1 === 0){
+           cart.splice(i, 1)
+          }
+          return
+      }
+  }
+
 }
 
 function addToCheckout(product_name, price) {
